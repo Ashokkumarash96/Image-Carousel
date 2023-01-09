@@ -1,0 +1,96 @@
+@import url(../../helpers/core.css);
+
+.carousel {
+  position: relative;
+  width: 550px;
+  margin: auto;
+}
+
+.img-frame {
+  margin-top: 8rem;
+  width: 550px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.img-holder {
+  margin-top: 5rem;
+  display: flex;
+  transition: 0.1s all;
+}
+
+img {
+  width: 550px;
+  height: 550px;
+  margin-left: 10px;
+}
+
+.handle {
+  position: absolute;
+  z-index: 1;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 8px 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-handle {
+  color: white;
+  background-color: black;
+  font-size: xx-large;
+  padding-left: 20px;
+  font-weight: 900;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+}
+
+.right-handle:hover,
+.left-handle:hover {
+  color: black;
+  background-color: white;
+}
+
+.right-handle {
+  top: 50%;
+  color: white;
+  background-color: black;
+  font-size: xx-large;
+  padding-left: 20px;
+  font-weight: 900;
+  transform: translate(750%, -50%);
+}
+
+.dot-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  margin-top: 40px;
+  margin-left: 60px;
+  column-gap: 10px;
+}
+
+.dot-holder>span {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border: 1px solid blue;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px white inset;
+}
+
+.dot-holder .selected {
+  background-color: green;
+}
+
+.container {
+  border: 10px solid black;
+  border-radius: 10px;
+  height: 100vh;
+  background-color: blanchedalmond;
+}
